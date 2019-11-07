@@ -16,7 +16,7 @@ The process then reads the migrations folder for objects that would essentially 
 As for if a migration has been completed two things are evaluated, in the addItem function the 
 value of `showItemExtra` is the result of `isset($keyValue[$ticketNumber])` the ItemExtra would 
 be set to '[COMPLETED]' and finally the `disabled` flag would be set based on the result of:
-`!(isset($keyValuePair[$ticketNumber]))`
+`isset($keyValuePair[$ticketNumber])`
 
 Properties
 
